@@ -19,3 +19,7 @@
 
 /* Seguros */
 @import "./seguros/seguros.css";
+
+/* Termos e Condições */
+
+@import "./termos/termos.css";

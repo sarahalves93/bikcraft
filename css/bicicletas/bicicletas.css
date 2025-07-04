@@ -8,19 +8,24 @@
   gap: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
+  background: url("../../img/dec/top-right.svg") no-repeat top 40px right 20px;
 }
 
 .bicicletas-imagem {
-  position: relative;
+  display: grid;
+}
+
+.bicicletas-imagem img {
+  grid-area: 1/1;
 }
 
 .bicicletas-imagem span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
   background: var(--cor-12);
   display: inline-block;
   padding: 8px 16px 8px 8px;
-  position: absolute;
-  top: 20px;
-  right: 0px;
   border-radius: 4px 0 0 4px;
 }
 
@@ -32,7 +37,7 @@
 
 .bicicletas h2,
 .bicicletas p {
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
 }
 
 .bicicletas h2 {
@@ -56,14 +61,14 @@
   place-self: end;
 }
 
-.bicicletas ul {
-  display: grid;
-  gap: 16px;
-}
-
 .bicicletas li {
   display: flex;
   align-items: center;
+}
+
+.bicicletas ul {
+  display: grid;
+  gap: 16px;
 }
 
 .bicicletas-conteudo img {

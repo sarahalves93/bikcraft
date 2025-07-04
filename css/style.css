@@ -34,3 +34,7 @@
 /* Termos e Condições */
 
 @import "./termos/termos.css";
+
+/* Orçamentos */
+
+@import "./orcamento/orcamento.css";
